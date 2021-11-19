@@ -20,10 +20,10 @@ public class DropDown {
 		Select dropdown1 = new Select(driver.findElement(By.id("dropdown1")));
 		dropdown1.selectByIndex(1);
 		//by text
-		Select dropdown2 =new Select (driver.findElement(By.id("dropdown2")));
+		Select dropdown2 =new Select (driver.findElement(By.xpath("//select[@name='dropdown2']")));
 		dropdown2.selectByVisibleText("Appium");
 		//by value
-		Select dropdown3 = new Select(driver.findElement(By.id("dropdown3")));
+		Select dropdown3 = new Select(driver.findElement(By.xpath("//select[@name='dropdown3']")));
 		dropdown3.selectByValue("3");
 		//no.of options
 		List<WebElement> options = dropdown3.getOptions();
